@@ -12,7 +12,7 @@ export default defineConfig({
     cors: true, // optional if making cross-origin requests
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://new-face-backend-production.up.railway.app',
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, '')
